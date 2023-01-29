@@ -22,8 +22,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "lts/*"
-      - name: Install dependencies
-        run: npm ci
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.HELM_CHART_RELEASER_TOKEN }}
