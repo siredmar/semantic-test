@@ -24,7 +24,7 @@ jobs:
           node-version: "lts/*"
       - name: Release
         env:
-          GITHUB_TOKEN: ${{ secrets.HELM_CHART_RELEASER_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |-
           #!/bin/bash
           set -e
