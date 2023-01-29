@@ -29,5 +29,6 @@ jobs:
           #!/bin/bash
           set -e
           # optional install steps of semantic-release plugins
+          npm install semantic-release@20.1.0 -D
           # npm install @semantic-release/exec @semantic-release/git @edgefarm/semantic-release-helm-oci -D
           npx -c semantic-release
